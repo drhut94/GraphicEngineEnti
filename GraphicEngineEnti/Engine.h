@@ -8,7 +8,6 @@ class Engine
 
 public:
 	static Engine& get();
-
 	RenderModule& getRender();
 	inline const std::vector<Module*> & getActiveModules() { return  moduleManager.getActiveModules(); };
 
@@ -21,7 +20,6 @@ public:
 private:
 	RenderModule* render = nullptr;
 	ModuleManager moduleManager;
-
 	void registerAllModules();
 
 };

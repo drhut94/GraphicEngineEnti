@@ -2,6 +2,7 @@
 #include "Engine.h"
 #include "Modules/RenderModule.h"
 #include "Modules/JoseModule.h"
+#include "Modules/JanModule.h"
 
 
 
@@ -74,4 +75,8 @@ void Engine::registerAllModules()
 	JoseModule * module = new JoseModule;
 
 	moduleManager.registerModule(module);
+	moduleManager.stopModule(module);
+
+	JanModule * janModule = new JanModule;
+	moduleManager.registerModule(janModule);
 }
