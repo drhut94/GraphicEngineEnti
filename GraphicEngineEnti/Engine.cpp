@@ -2,6 +2,8 @@
 #include "Engine.h"
 #include "Modules/RenderModule.h"
 #include "Modules/JoseModule.h"
+#include "JanModule.h"
+
 
 
 
@@ -81,9 +83,11 @@ void Engine::setModelObjectConstants(const glm::mat4& model, const glm::vec4& co
 
 void Engine::registerAllModules()
 {
-	JoseModule * module = new JoseModule;
+	//JoseModule * module = new JoseModule;
+	JanModule* janModule = new JanModule;
 
 	
-	moduleManager.registerModule(module);
+	//moduleManager.registerModule(module);
+	moduleManager.registerModule(janModule);
 //	moduleManager.stopModule(module);
 }

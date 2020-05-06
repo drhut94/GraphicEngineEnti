@@ -130,6 +130,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="JanModule.cpp" />
     <ClCompile Include="Render\Camera\CameraController.cpp" />
     <ClCompile Include="Modules\JoseModule.cpp" />
     <ClCompile Include="Modules\moduleManager.cpp" />
@@ -150,6 +151,7 @@
     <ClCompile Include="Geometry\Transform.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="JanModule.h" />
     <ClInclude Include="Render\Camera\CameraController.h" />
     <ClInclude Include="Modules\JoseModule.h" />
     <ClInclude Include="Modules\moduleManager.h" />
